@@ -33,7 +33,7 @@ app.config['MAIL_DEFAULT_SENDER'] = ('Innoventures', 'prakruthi.1dt19is095@gmail
 mail = Mail(app)
 
 # MongoDB setup
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient("mongodb://localhost:27017")
 db = client['hrabc']  # Change 'candidate_database' to your desired database name
 candidates_collection = db['candidates']
 recruiters_collection = db['recruiters']
